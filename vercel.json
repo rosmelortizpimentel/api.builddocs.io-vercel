@@ -1,13 +1,4 @@
 {
-    "routes": [
-        {
-            "src": "/v1/(.*)",
-            "methods": [
-                "OPTIONS"
-            ],
-            "dest": "/api/cors"
-        }
-    ],
     "rewrites": [
         {
             "source": "/v1/generate-document",
@@ -16,25 +7,6 @@
         {
             "source": "/v1/document-status/:job_id",
             "destination": "https://qjdbthjuvatlpawualyn.supabase.co/functions/v1/document-status?job_id=:job_id"
-        }
-    ],
-    "headers": [
-        {
-            "source": "/(.*)",
-            "headers": [
-                {
-                    "key": "Access-Control-Allow-Origin",
-                    "value": "*"
-                },
-                {
-                    "key": "Access-Control-Allow-Methods",
-                    "value": "GET, POST, OPTIONS"
-                },
-                {
-                    "key": "Access-Control-Allow-Headers",
-                    "value": "Authorization, Content-Type"
-                }
-            ]
         }
     ]
 }
