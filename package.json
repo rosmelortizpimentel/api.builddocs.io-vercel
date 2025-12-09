@@ -1,0 +1,6 @@
+{
+    "name": "builddocs-api-gateway",
+    "version": "1.0.0",
+    "private": true,
+    "description": "API Gateway for BuildDocs - Proxies requests to Supabase Edge Functions"
+}
