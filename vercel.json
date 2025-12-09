@@ -1,4 +1,13 @@
 {
+    "routes": [
+        {
+            "src": "/v1/(.*)",
+            "methods": [
+                "OPTIONS"
+            ],
+            "dest": "/api/cors"
+        }
+    ],
     "rewrites": [
         {
             "source": "/v1/generate-document",
