@@ -5,8 +5,8 @@
             "destination": "https://qjdbthjuvatlpawualyn.supabase.co/functions/v1/generate-document"
         },
         {
-            "source": "/v1/document-status",
-            "destination": "https://qjdbthjuvatlpawualyn.supabase.co/functions/v1/document-status"
+            "source": "/v1/document-status/:job_id",
+            "destination": "https://qjdbthjuvatlpawualyn.supabase.co/functions/v1/document-status?job_id=:job_id"
         }
     ],
     "headers": [

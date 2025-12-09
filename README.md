@@ -7,7 +7,7 @@ This project acts as a proxy/gateway to expose Supabase Edge Functions under a c
 | Endpoint | Description |
 |----------|-------------|
 | `POST /v1/generate-document` | Generate a document from template |
-| `GET /v1/document-status?job_id=xxx` | Check document generation status |
+| `GET /v1/document-status/{job_id}` | Check document generation status |
 
 ## Setup
 
@@ -25,6 +25,7 @@ curl -X POST "https://api.builddocs.io/v1/generate-document" \
   -d '{"template_id": "xxx", "data": {...}}'
 
 # Check status
-curl "https://api.builddocs.io/v1/document-status?job_id=xxx" \
+curl "https://api.builddocs.io/v1/document-status/job_abc123" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
+
