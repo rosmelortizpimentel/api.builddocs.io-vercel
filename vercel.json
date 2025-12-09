@@ -6,7 +6,7 @@
         },
         {
             "source": "/v1/document-status/:job_id",
-            "destination": "https://qjdbthjuvatlpawualyn.supabase.co/functions/v1/document-status?job_id=:job_id"
+            "destination": "https://qjdbthjuvatlpawualyn.supabase.co/functions/v1/document-status/:job_id"
         }
     ]
 }
